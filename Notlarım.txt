@@ -1,0 +1,3 @@
+CLI Command
+dotnet new console 
+Launch.json -> Configuration -> Console: External or Internal Terminal -- You can change
