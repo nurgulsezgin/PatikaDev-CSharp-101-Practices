@@ -24,7 +24,7 @@ double d1 = 12E4D;
 //Texts
 
 bool myBool = true;	              //1 bit	Stores true or false values
-char myLetter = 'D';	         //2 bytes	Stores a single character/letter, surrounded by single quotes
+char myLetter = 'D';	         //2 bytes	Stores a single character or letter, surrounded by single quotes
 string myText = "Hello";	    //2 bytes per character
 
 object o1 = 'D';
