@@ -32,3 +32,5 @@ string mystring = "10";
 string myDateTime = "10.10.2010";
 Console.WriteLine(Int16.Parse(mystring)+100+25*4);       // convert string to short
 Console.WriteLine(DateTime.Parse(myDateTime));          // convert string to date
+
+Console.Read();
