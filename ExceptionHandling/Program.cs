@@ -10,7 +10,7 @@
 }
 catch(Exception ex)//{ Hata ile karşılaşıldığında ne yapılacağı buraya yazılır }
 {
-    Console.WriteLine("Bir Hata Oluştu: "+ ex.Message);
+    Console.WriteLine("Bir Hata Oluştu: "+ ex.Message.ToString());
 }
 finally//{ Hata olsun olmasın mutlaka yapılmasını istediğimiz işler varsa buraya yazarız }
 {
