@@ -21,9 +21,8 @@ colors[3]="Blue";
 //Access the Elements of an Array
 Console.WriteLine(colors);
 Console.WriteLine(cars[0]);
-//Array Length and count methods
-Console.WriteLine(colors.Length);// length of an array,
-Console.WriteLine(colors.Count());//total number of elements.
+//Array Length
+Console.WriteLine(colors.Length);
 
 //Loop Through an Array
 for (int i = 0; i < animals.Length; i++) 
@@ -39,8 +38,9 @@ foreach (int i in myNumbers)
 }
 
 //System.Linq Namespace
-Console.WriteLine(myNumbers.Sum());  // returns the sum of values
+Console.WriteLine(myNumbers.Sum());  // returns the sum of value
 
-double sum = myNumbers.Sum();
-double ortalama = sum / myNumbers.Length;
-Console.WriteLine("Sayıların ortalaması: " + ortalama);
+Array.Reverse(myNumbers);//Tersten yazdırır.
+Array.IndexOf(myNumbers,5);//Verilen dizinin verilen elemanının indexini getirir. Eğer dizi içerisinde elemanı bulamazsa -1 döner.
+Array.Clear(myNumbers,2,2);//2.indexinden başlayarak 2 tane elemanı temizler.
+Array.Resize<int>(ref myNumbers,2);//Dizileri yeniden boyutlandırmak için kullanılır.// boş olan indexlerin değeri ise varsayılan olarak 0 atanır.
