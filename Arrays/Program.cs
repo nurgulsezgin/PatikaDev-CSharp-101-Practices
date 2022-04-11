@@ -21,8 +21,9 @@ colors[3]="Blue";
 //Access the Elements of an Array
 Console.WriteLine(colors);
 Console.WriteLine(cars[0]);
-//Array Length
-Console.WriteLine(colors.Length);
+//Array Length and count methods
+Console.WriteLine(colors.Length);// length of an array,
+Console.WriteLine(colors.Count());//total number of elements.
 
 //Loop Through an Array
 for (int i = 0; i < animals.Length; i++) 
