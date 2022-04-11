@@ -14,4 +14,22 @@ for (int i = 1; i <= 10; i++)
     Console.WriteLine(i);
 }
 
+
+int sayac = 1;
+while (sayac <= 5)//Koşullar sağlandıkça komut satırlarının çalıştırılmasını sağlar
+{
+    Console.WriteLine(sayac);
+    sayac++;
+}
+
+
+int[] sayiDizisi = {2,4,5,1,2,4};
+int toplam = 0 ;
+
+foreach(int i in sayiDizisi)//diziler ve koleksiyonlarla döngüsel işlemler yapmak için kullanılır
+{
+    toplam += i ;
+    Console.WriteLine(i+"+Toplam = "+ toplam);
+}
+
 Console.Read();
