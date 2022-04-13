@@ -1,4 +1,4 @@
-﻿//Recursive Function:Öz yinelemeli fonksiyon 
+﻿//Recursive Function:Öz yinelemeli fonksiyon  
 static void FibonacciDizisi(int num)
 {
     for(int i = 0; i < num; i++)
@@ -50,7 +50,7 @@ if(myValue.IsPrimeNumber())
 {Console.WriteLine(myValue+", bir asal sayıdır");}
 else 
 {Console.WriteLine(myValue+", bir asal sayı değildir.");}
-
+Console.WriteLine("Nurgül Sezgin".RemoveWhiteSpaces());
 Console.WriteLine("Please click any button to close terminal.");
 Console.ReadKey();
 public static class MyExtensionClass
@@ -73,6 +73,12 @@ public static class MyExtensionClass
             }
         }
         return true;
+    }
+
+    public static string RemoveWhiteSpaces(this string text) 
+    {
+        string[] array=text.Split(" ");
+        return string.Join("",array);
     }
 }
 
