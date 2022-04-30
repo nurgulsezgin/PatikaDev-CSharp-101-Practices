@@ -10,10 +10,10 @@
 // }
 
 //Erişim Belirleyiciler
-//*Public
-//*Private
-//*Internal
-//*Protected
+//*Public : Her yerden erişilebilir.
+//*Private : Sadece tanımlandığı sınıf içerisinden erişilebilir.
+//*Internal : Sadece bulunduğu proje içerisinden erişilebilir
+//*Protected : Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.
 
 Employee employee1=new Employee();
 employee1.name="Ayşe";
