@@ -15,6 +15,16 @@
             Console.WriteLine("Show From Derived Class.");  
         }  
     }  
+    public sealed class Base2
+    {
+        protected void sealedMethod(){
+            Console.WriteLine(" Cannot derive from sealed class ");
+        }
+    }
+    public class SealedClass:Base2
+    {
+        
+    }
     static void Main(string[] args)  
     {  
         Base objBaseRefToDerived  = new Derived();  
