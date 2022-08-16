@@ -22,6 +22,8 @@ switch (choice)
         break;
 
     case "3":
+        EditingOperation operation3 = new EditingOperation();
+        operation3.Update();
         break;
 
     case "4":

@@ -30,4 +30,9 @@ public class SavingOperation
         Console.WriteLine(name + " " + surname + " added successfully.");
 
     }
+    public bool CheckExist(string input)
+    {
+        bool exists = PhoneBookDatabase.PhoneList.Any(x => x.FirstName == input || x.LastName == input);
+        return exists;
+    }
 }
