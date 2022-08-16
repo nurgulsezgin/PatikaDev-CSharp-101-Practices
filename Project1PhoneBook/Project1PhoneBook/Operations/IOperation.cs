@@ -14,5 +14,5 @@ internal interface IOperation
     public void Delete() { }
     public void Update() { }
     public void List() { }
-    public void Serach() { }
+    public void Search() { }
 }

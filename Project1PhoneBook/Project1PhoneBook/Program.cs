@@ -27,6 +27,8 @@ switch (choice)
         break;
 
     case "4":
+        ListOperation operation4 = new ListOperation();
+        operation4.List();
         break;
 
     case "5":
