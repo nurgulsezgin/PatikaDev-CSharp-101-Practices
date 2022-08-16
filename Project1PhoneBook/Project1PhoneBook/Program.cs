@@ -17,6 +17,8 @@ switch (choice)
         break;
 
     case "2":
+        DeletingOperation operation2 = new DeletingOperation();
+        operation2.Delete();
         break;
 
     case "3":
