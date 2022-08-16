@@ -32,5 +32,7 @@ switch (choice)
         break;
 
     case "5":
+        SearchOperations operation5 = new SearchOperations();
+        operation5.Search();
         break;
 }
