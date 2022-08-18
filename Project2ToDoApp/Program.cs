@@ -20,6 +20,8 @@ switch (selection)
         operation2.Add();
         break;
     case 3:
+        DeletingCard operation3=new DeletingCard();
+        operation3.Delete();
         break;
     case 4:
         break;
