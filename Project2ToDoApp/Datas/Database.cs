@@ -40,9 +40,10 @@ internal class Database
         _Boards.Inprogress = ınProgress;
         _Boards.Done = done;
     }
-    public List<Card> Cards
+    public static List<Card> Cards
     {
         get { return _Cards; }
     }
     public static Board Boards => _Boards;
+    public static List<Person> PersonList => _PersonList;
 }

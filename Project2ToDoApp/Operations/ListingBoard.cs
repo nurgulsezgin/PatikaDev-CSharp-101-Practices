@@ -26,10 +26,10 @@ public class ListingBoard : IOperations
         Console.WriteLine("*******************************************");
         foreach (var item in listName)
         {
-            Console.WriteLine("Başlık =  {0}", item.Title);
-            Console.WriteLine("İçerik  = {0}", item.Content);
-            Console.WriteLine("Kart Sahibi = {0}", item.Person);
-            Console.WriteLine("kart Büyüklüğü = {0}\n", item.Size);
+            Console.WriteLine("Başlık      :  {0}", item.Title);
+            Console.WriteLine("İçerik      :  {0}", item.Content);
+            Console.WriteLine("Atanan Kişi :  {0}", item.Person);
+            Console.WriteLine("Büyüklük    :  {0}\n", item.Size);
         }
     }
 }

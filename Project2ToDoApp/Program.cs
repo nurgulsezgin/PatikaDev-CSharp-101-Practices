@@ -12,10 +12,12 @@ int selection = int.Parse(Console.ReadLine());
 switch (selection)
 {
     case 1:
-        ListingBoard operation1 =new ListingBoard();
+        ListingBoard operation1 = new ListingBoard();
         operation1.List();
         break;
     case 2:
+        AddingCard operation2 = new AddingCard();
+        operation2.Add();
         break;
     case 3:
         break;

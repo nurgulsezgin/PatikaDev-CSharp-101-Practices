@@ -14,5 +14,5 @@ internal class Card
     public string Content { get; set; }
     public string Person { get; set; }
     public string Size { get; set; }
-    public string BoardType { get; set; }
+    public string BoardType { get; set; } = "TODO";
 }
