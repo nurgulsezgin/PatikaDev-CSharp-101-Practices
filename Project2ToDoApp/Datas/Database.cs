@@ -22,11 +22,7 @@ internal class Database
             new Card{Title="Toplantı", Content="08.05.2022 00.00 da toplantı yapılacak ", Person="Ahmet", Size="XL",BoardType="DONE" },
             new Card{Title="Egitim", Content="Stajerlere eğitim verilecek", Person="Gül", Size="XS",BoardType="TODO" },
         };
-        //_Boards = new List<Board>()
-        //{
-        //    Card Project2ToDoApasdds=_Cards.FirstOrDefault(x=>x.BoardType=="TODO");
-        //    new Board{ TODO=_Cards.FirstOrDefault(x=>x.BoardType=="TODO"),INPROGRESS=}
-        //};
+
         _PersonList = new List<Person>()
         {
             new Person{Id=1,Name="Ali",Team="A"},
@@ -35,14 +31,14 @@ internal class Database
             new Person{Id=4,Name="Gül",Team="B"},
         };
 
-        Card toDo = _Cards.FirstOrDefault(x => x.BoardType == "TODO");
-        Card InProgress = _Cards.FirstOrDefault(x => x.BoardType == "IN PROGRESS");
-        Card done = _Cards.FirstOrDefault(x => x.BoardType == "DONE");
+        var toDo = _Cards.Where(x => x.BoardType == "TODO").ToList();
+        var ınProgress = _Cards.Where(x => x.BoardType == "IN PROGRESS").ToList();
+        var done = _Cards.Where(x => x.BoardType == "DONE").ToList();
 
         _Boards = new Board();
-        _Boards.Todo.Add(toDo);
-        _Boards.Inprogress.Add(InProgress);
-        _Boards.Done.Add(done);
+        _Boards.Todo = toDo;
+        _Boards.Inprogress = ınProgress;
+        _Boards.Done = done;
     }
     public List<Card> Cards
     {

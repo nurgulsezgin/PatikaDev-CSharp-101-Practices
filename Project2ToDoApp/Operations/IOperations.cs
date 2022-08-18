@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project2ToDoApp.Datas;
-internal class Board
+namespace Project2ToDoApp.Operations;
+internal interface IOperations
 {
-    public List<Card>? Todo { get;set; }
-    public List<Card>? Inprogress { get;set; }
-    public List<Card>? Done { get;set; }
-
+    public void List() { }
+    public void Add() { }
+    public void Delete() { }
+    public void Move() { }
 }

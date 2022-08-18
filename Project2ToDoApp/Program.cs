@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz :)");
+﻿using Project2ToDoApp.Operations;
+
+Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz :)");
 Console.WriteLine("*******************************************");
 Console.WriteLine("(1) Board Listelemek");
 Console.WriteLine("(2) Board'a Kart Eklemek");
@@ -10,6 +12,8 @@ int selection = int.Parse(Console.ReadLine());
 switch (selection)
 {
     case 1:
+        ListingBoard operation1 =new ListingBoard();
+        operation1.List();
         break;
     case 2:
         break;
