@@ -1,5 +1,6 @@
 ﻿using Project2ToDoApp.Operations;
 
+start:
 Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz :)");
 Console.WriteLine("*******************************************");
 Console.WriteLine("(1) Board Listelemek");
@@ -20,11 +21,16 @@ switch (selection)
         operation2.Add();
         break;
     case 3:
-        DeletingCard operation3=new DeletingCard();
+        DeletingCard operation3 = new DeletingCard();
         operation3.Delete();
         break;
     case 4:
+        MovingCard operation4 = new MovingCard();
+        operation4.Move();
         break;
     default:
         break;
 }
+Console.WriteLine("Başka işlem yapmak için herhangi bir tuşa basınız.");
+string input = Console.ReadLine();
+if (input != null) { goto start; }

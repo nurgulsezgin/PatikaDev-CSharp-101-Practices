@@ -11,7 +11,6 @@ namespace Project2ToDoApp.Datas;
 internal class Database
 {
     private static List<Card> _Cards;
-    private static Board _Boards;
     private static List<Person> _PersonList;
     static Database()
     {
@@ -31,19 +30,9 @@ internal class Database
             new Person{Id=4,Name="Gül",Team="B"},
         };
 
-        var toDo = _Cards.Where(x => x.BoardType == "TODO").ToList();
-        var ınProgress = _Cards.Where(x => x.BoardType == "IN PROGRESS").ToList();
-        var done = _Cards.Where(x => x.BoardType == "DONE").ToList();
-
-        _Boards = new Board();
-        _Boards.Todo = toDo;
-        _Boards.Inprogress = ınProgress;
-        _Boards.Done = done;
     }
-    public static List<Card> Cards
-    {
-        get { return _Cards; }
-    }
-    public static Board Boards => _Boards;
+    public static List<Card> Cards=>_Cards;
     public static List<Person> PersonList => _PersonList;
+
+    
 }

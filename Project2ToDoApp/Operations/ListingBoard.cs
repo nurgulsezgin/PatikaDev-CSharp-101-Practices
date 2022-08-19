@@ -12,11 +12,25 @@ using Project2ToDoApp.Datas;
 namespace Project2ToDoApp.Operations;
 public class ListingBoard : IOperations
 {
+    private static Board _Boards;
+    
+    public void LineBoard()
+    {
+        var toDo = Database.Cards.Where(x => x.BoardType == "TODO").ToList();
+        var ınProgress = Database.Cards.Where(x => x.BoardType == "IN PROGRESS").ToList();
+        var done = Database.Cards.Where(x => x.BoardType == "DONE").ToList();
+
+        _Boards = new Board();
+        _Boards.Todo = toDo;
+        _Boards.Inprogress = ınProgress;
+        _Boards.Done = done;
+    }
     public void List()
     {
-        ShowCard(" TODO Line",Database.Boards.Todo);
-        ShowCard(" IN PROGRESS Line",Database.Boards.Inprogress);
-        ShowCard(" DONE Line",Database.Boards.Done);
+        LineBoard();
+        ShowCard(" TODO Line", _Boards.Todo);
+        ShowCard(" IN PROGRESS Line", _Boards.Inprogress);
+        ShowCard(" DONE Line", _Boards.Done);
 
     }
     void ShowCard(string boardType,List<Card>? listName)

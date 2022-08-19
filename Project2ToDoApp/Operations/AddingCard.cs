@@ -49,7 +49,7 @@ internal class AddingCard : IOperations
         if (person != null)
         {
             Database.Cards.Add(newCard);
-            Console.WriteLine("Bu kart{0} tarafından oluşturulmuştur.", person.Name);
+            Console.WriteLine("Bu kart {0} tarafından oluşturulmuştur.", person.Name);
         }
         else
         {
